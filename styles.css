@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 5%;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 37px;
+  margin-right: 5px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.nav-items a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav-items:nth-child(2) i {
+  margin-left: 5px;
+}
+
+.nav-auth {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav-auth a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.nav-auth button {
+  border: 2px solid #66fcf1;
+  color: #66fcf1;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-auth button:hover {
+  background-color: #66fcf1;
+  color: black;
+}
+
+.hero-section {
+  height: 100vh;
+  background-color: black;
+  background-image: url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2023/11/19112428/New-Project.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 0 8%;
+}
+
+.hero-section .hero-section-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero-section .hero-section-left p:nth-child(1) {
+  color: #66fcf1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.hero-section .hero-section-left h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 40px 0 25px 0;
+}
+
+.hero-section .hero-section-left p:nth-child(3) {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-section-left p:nth-child(4) {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero-section .hero-section-left .explore-btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #66fcf1;
+  border: 1px solid #66fcf1;
+  cursor: pointer;
+}
+
+.hero-section .hero-section-left .explore-btn:hover {
+  background-color: orange;
+  border: 1px solid orange;
+}
+
+.hero-section .hero-section-left .play-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #66fcf1;
+  cursor: pointer;
+}
+
+.hero-section .hero-section-left span {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-section .hero-section-left #animated-play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #121212;
+  -webkit-animation: play 0.8s ease-in-out infinite both;
+  animation: play 0.8s ease-in-out infinite both;
+}
+
+#features-section {
+  background-color: #0b0c10;
+  display: flex;
+  gap: 30px;
+  padding: 5% 8%;
+  color: white;
+}
+
+#features-section .why-choose-us {
+  border: 2px solid #66fcf1;
+  padding: 40px 30px 30px 30px;
+}
+
+#features-section .why-choose-us h1 {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#features-section .why-choose-us p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin: 30px 0;
+}
+
+#features-section .why-choose-us button {
+  border: 2px solid #66fcf1;
+  color: #66fcf1;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#features-section .why-choose-us button:hover {
+  background-color: #66fcf1;
+  color: black;
+}
+
+#features-section .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#features-section .features .feature .img {
+  height: 70px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+#features-section .features .feature .img img {
+  width: 30px;
+}
+
+#features-section .features .feature {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+#features-section .features .feature .content h1 {
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+#features-section .features .feature .content h1:hover {
+  color: #66fcf1;
+  border-bottom: 2px solid #66fcf1;
+}
+
+#features-section .features .feature .content p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+#experience-section {
+  background-color: black;
+  padding: 5% 8% 0;
+  color: white;
+}
+
+#experience-section h1 {
+  font-size: 4rem;
+  margin: 20px 0 50px;
+}
+
+#experience-section .experience {
+  display: flex;
+}
+
+#experience-section .experience .experience-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#experience-section .experience .experience-left p {
+  line-height: 25px;
+  font: 1.1rem;
+  letter-spacing: 1px;
+}
+
+#experience-section .experience-left .images {
+  display: flex;
+  gap: 2rem;
+  margin: 40px 0 60px;
+}
+
+#experience-section .experience-left .images img {
+  width: 20rem;
+  height: fit-content;
+  border-radius: 15px;
+  transition: ease-in-out 0.4s;
+}
+
+#experience-section .experience-left .images img:hover {
+  scale: 102%;
+}
+
+#experience-section .statistics {
+  display: flex;
+  gap: 5rem;
+}
+
+#experience-section .statistics div h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+#experience-section .statistics div h2 span {
+  color: #66fcf1;
+}
+
+#experience-section .statistics div p {
+  font-size: 1.1rem;
+}
+
+#experience-section .experience-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services {
+  background-color: #121212;
+  color: white;
+  padding-bottom: 8%;
+}
+
+#title {
+  padding: 5% 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title div .dash {
+  display: inline-block;
+  border: 1px solid #66fcf1;
+  width: 50px;
+}
+
+#title .dash-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#title div span {
+  color: #66fcf1;
+}
+
+#title div h1 {
+  font-size: 2.8rem;
+  margin-top: 15px;
+}
+
+#title button {
+  border: 2px solid #66fcf1;
+  color: #66fcf1;
+  padding: 18px 30px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#title button:hover {
+  background-color: #66fcf1;
+  color: black;
+}
+
+#services .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .images .image1 {
+  background-image: url("https://demo.gutenify.com/gutenify-virtual-reality-pro/wp-content/themes/gutenify-virtual-reality/images/VR-1.jpg");
+}
+
+#services .images .image2 {
+  background-image: url("https://demo.gutenify.com/gutenify-virtual-reality-pro/wp-content/themes/gutenify-virtual-reality/images/VR-2.jpg");
+}
+
+#services .images .image3 {
+  background-image: url("https://demo.gutenify.com/gutenify-virtual-reality-pro/wp-content/themes/gutenify-virtual-reality/images/VR-3.jpg");
+}
+
+#services .images .image4 {
+  background-image: url("https://demo.gutenify.com/gutenify-virtual-reality-pro/wp-content/themes/gutenify-virtual-reality/images/VR-4.jpg");
+}
+
+#services .images div {
+  width: 360px;
+  height: 430px;
+  background-position: center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 35px;
+}
+
+#services .images div span {
+  color: #66fcf1;
+  margin-bottom: 20px;
+}
+
+#services .images div h4 {
+  font-size: 1.5rem;
+}
+
+#testimonial-section {
+  background-color: black;
+  color: white;
+  padding-bottom: 8%;
+}
+
+#testimonial-section .testimonial-description {
+  padding: 5% 6%;
+  margin: 0 8%;
+  border: 2px solid #2d2f38;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#testimonial-section .testimonial-description .testimonial-identity {
+  border-right: 2px solid #2d2f38;
+  padding-right: 40px;
+}
+
+#testimonial-section .testimonial-description .testimonial-identity img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+#testimonial-section .testimonial-description .testimonial-identity p span {
+  display: inline-block;
+}
+
+#testimonial-section
+  .testimonial-description
+  .testimonial-identity
+  p
+  span:nth-child(1) {
+  font-size: 1.3rem;
+  margin: 25px 0 8px;
+}
+
+#testimonial-section
+  .testimonial-description
+  .testimonial-identity
+  p
+  span:nth-child(2) {
+  width: max-content;
+  font-size: 1.1rem;
+  color: #66fcf1;
+}
+
+#testimonial-section .testimonial-description .testimonial-content p {
+  font-size: 1.5rem;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+#testimonial-section .testimonial-description .testimonial-content img {
+  width: 8rem;
+  margin-top: 20px;
+}
+
+/* animation */
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes play {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
