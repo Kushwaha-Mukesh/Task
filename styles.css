@@ -464,6 +464,415 @@ nav {
   margin-top: 20px;
 }
 
+#news-section {
+  background-color: #0b0c10;
+  color: white;
+  padding-bottom: 5%;
+}
+
+#news-section .news-content {
+  border: 2px solid #2d2f38;
+  padding: 3%;
+  margin: 0 8%;
+  display: flex;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+#news-section .img-container {
+  background-image: linear-gradient(to bottom, transparent, rgb(71, 64, 64)),
+    url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2022/10/27130140/social-media-addiction-2021-09-24-02-56-43-utc-1.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  width: 50rem;
+  height: 100vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 15% 5% 5%;
+}
+
+#news-section .img-container h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+#news-section .img-container p {
+  display: flex;
+  gap: 10px;
+}
+
+#news-section .news-articles #img1 {
+  background-image: url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2022/10/27130140/social-media-addiction-2021-09-24-02-56-43-utc-1.jpeg");
+}
+
+#news-section .news-articles #img2 {
+  background-image: url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2022/10/27130142/the-smart-generation-2022-02-02-03-57-42-utc.jpeg");
+}
+
+#news-section .news-articles #img3 {
+  background-image: url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2022/10/27130145/woman-have-breakfast-in-caffe-and-using-smartphone-2022-01-29-00-32-37-utc.jpeg");
+}
+
+#news-section .news-articles .news-article-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+}
+
+#news-section .news-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#news-section .news-articles .news-article {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+#news-section .news-articles .news-article .news-article-title {
+  flex: 1;
+}
+
+#news-section .news-articles .news-article .news-article-title h4 {
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+#news-section .news-articles .news-article .news-article-title p {
+  display: flex;
+  gap: 10px;
+}
+
+#pricing-section {
+  background-color: #121212;
+  color: white;
+  padding: 7% 8%;
+}
+
+#pricing-section .pricing-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#pricing-section .pricing-title h1 {
+  font-size: 2.2rem;
+  margin-top: 25px;
+}
+
+#pricing-section .pricing-title p {
+  color: #66fcf1;
+  letter-spacing: 1px;
+}
+
+#pricing-section .pricing-details {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+#pricing-section .pricing-details div {
+  background-color: #0b0c10;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+#pricing-section .pricing-details div h1 {
+  font-size: 3.2rem;
+}
+
+#pricing-section .pricing-details div h1 .month {
+  font-size: 14px;
+  font-style: italic;
+  position: relative;
+  top: 10px;
+}
+
+#pricing-section .pricing-details div h1 .month i {
+  color: #f78550;
+}
+
+#pricing-section .pricing-details div h1 .one {
+  font-size: 40px;
+  position: relative;
+  bottom: 20px;
+}
+
+#pricing-section .pricing-details div h4 {
+  font-size: 18px;
+  color: #66fcf1;
+  margin: 20px 0 30px 0;
+}
+
+#pricing-section .pricing-details div h6 {
+  font-size: 18px;
+}
+
+#pricing-section .pricing-details div p i {
+  margin-right: 10px;
+  color: #66fcf1;
+}
+
+#pricing-section .pricing-details div button {
+  width: 100%;
+  border: 2px solid #66fcf1;
+  color: #66fcf1;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#pricing-section .pricing-details div button:hover {
+  background-color: #66fcf1;
+  color: black;
+}
+
+#pricing-section .pricing-details .regular-plan {
+  padding: 6% 5%;
+  border: 2px solid #66fcf1;
+}
+
+#pricing-section .pricing-details .regular-plan button {
+  background-color: #66fcf1;
+  color: black;
+}
+
+#pricing-section .pricing-details .regular-plan button:hover {
+  background-color: #f78550;
+  border: 2px solid #f78550;
+}
+
+#services-for-clients {
+  background-color: black;
+  color: white;
+  padding-bottom: 7%;
+}
+
+#services-for-clients #title {
+  padding: 6% 7%;
+}
+
+#services-for-clients .services {
+  padding: 0 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#services-for-clients .services div {
+  background-color: #0b0c10;
+  padding: 5%;
+  border-bottom: 2px solid #66fcf1;
+  width: 410px;
+}
+
+#services-for-clients .services div h1 {
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  margin: 25px 0;
+}
+
+#services-for-clients .services div h1:hover {
+  color: #66fcf1;
+  border-bottom: 2px solid #66fcf1;
+}
+
+#services-for-clients .services div p {
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+#services-for-clients .services div a {
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+#services-for-clients .view-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#services-for-clients .view-more button {
+  border: 2px solid #66fcf1;
+  background-color: #66fcf1;
+  color: black;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#services-for-clients .view-more button:hover {
+  background-color: #f78550;
+  border: 2px solid #f78550;
+}
+
+#clients-logo {
+  background-color: #121212;
+  padding: 5% 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients-logo img {
+  width: 16rem;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  padding-top: 6%;
+}
+
+#footer .footer-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0 7%;
+  padding-bottom: 4%;
+  border-bottom: 2px solid #2d2f38;
+}
+
+#footer .footer-header div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-header .footer-title div {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#footer .footer-header .footer-title div img {
+  width: 3rem;
+}
+
+#footer .footer-header .footer-title div h5 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+#footer .footer-header .footer-title div h5:hover {
+  color: #66fcf1;
+  border-bottom: 2px solid #66fcf1;
+}
+
+#footer .footer-header .footer-title p {
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+#footer .footer-header div h5 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+#footer .footer-header div a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#footer .footer-header div a i {
+  color: #66fcf1;
+  margin-right: 10px;
+}
+
+#footer .footer-header div p {
+  margin-bottom: 20px;
+}
+
+#footer .contact {
+  padding: 5% 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+#footer .contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#footer .contact div h5 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#footer .contact .follow p {
+  font-size: 18px;
+  display: flex;
+  gap: 35px;
+  margin-bottom: 0;
+}
+
+#footer .contact .subscribe input {
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  background-color: #0f1010;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#footer .contact .subscribe button {
+  border: 2px solid #66fcf1;
+  background-color: #66fcf1;
+  color: black;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#footer .contact .subscribe button:hover {
+  background-color: #f78550;
+  border: 2px solid #f78550;
+}
+
+#footer .contact .payment img {
+  width: 25rem;
+}
+
+#footer .last-section {
+  font-size: 18px;
+  text-align: center;
+  background-color: #0b0c10;
+  padding: 2% 0;
+}
+
 /* animation */
 @-webkit-keyframes play {
   0% {
