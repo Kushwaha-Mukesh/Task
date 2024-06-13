@@ -1,0 +1,323 @@
+#up-arrow {
+  position: fixed;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 8px 13px;
+  bottom: 60px;
+  right: 50px;
+  border-radius: 20px;
+}
+
+#up-arrow:hover {
+  background-color: #66fcf1;
+  color: black;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+    padding: 20px 5vw;
+    position: sticky;
+  }
+
+  .logo span {
+    font-size: 3vw;
+  }
+
+  nav .nav-menu {
+    display: none;
+  }
+
+  .nav-items a:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  .nav-items a {
+    margin-left: 20px;
+    font-size: 2vw;
+  }
+
+  .nav-auth a {
+    font-size: 2vw;
+  }
+
+  .nav-auth {
+    margin-left: 0;
+  }
+
+  .nav-auth button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 80vh;
+    padding: 0 0 10vh 5vw;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content {
+    width: 100%;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content h1 {
+    font-size: 7.5vw;
+  }
+
+  #features-section {
+    flex-direction: column;
+  }
+
+  #features-section .features {
+    gap: 30px;
+  }
+
+  #experience-section .experience {
+    flex-direction: column;
+  }
+
+  #services .images div {
+    width: 300px;
+    height: 350px;
+  }
+
+  #news-section .img-container {
+    width: 40rem;
+    height: 80vh;
+  }
+
+  #footer .footer-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5vh 5vw;
+    position: static;
+  }
+
+  nav .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo span {
+    font-size: 1.4rem;
+  }
+
+  nav .nav-items {
+    display: none;
+  }
+
+  nav .nav-menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid #2d2f38;
+    padding: 0 10px;
+  }
+
+  .nav-auth {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .nav-auth button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 80vh;
+    padding: 0 0 10vh 0;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content {
+    width: 100%;
+    padding: 0 0 0 5vw;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-section .carousel-container .carousel-slide .text-content h1 {
+    font-size: 7.5vw;
+  }
+
+  #features-section {
+    flex-direction: column;
+    padding: 2vh 4vw 12vh;
+  }
+
+  #features-section .features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #experience-section {
+    padding: 8vh 5vw 0;
+  }
+
+  #experience-section h1 {
+    font-size: 6vw;
+  }
+
+  #experience-section .experience {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #experience-section .experience .experience-left {
+    width: 100%;
+  }
+
+  #experience-section .experience-left .images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #experience-section .experience-left .images img {
+    width: 100%;
+  }
+
+  #experience-section .statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #experience-section .statistics div h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  #experience-section .statistics div p {
+    font-size: 1rem;
+  }
+
+  #experience-section .experience-right {
+    width: 100%;
+    padding-top: 70px;
+  }
+
+  #title {
+    padding: 5vh 5vw;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #title div h1 {
+    font-size: 2rem;
+    margin: 10px 0 20px;
+    font-weight: 500;
+  }
+
+  #title button {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+
+  #services .images {
+    margin-top: 30px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 3vw;
+  }
+
+  #services .images .image {
+    width: 100%;
+    background-size: 100%;
+  }
+
+  #services .images .image:hover {
+    background-size: 120%;
+  }
+
+  #testimonial-section .testimonial-description {
+    padding: 10vh 6vw;
+    margin: 5vh 5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #news-section .news-content {
+    margin: 5vh 5vw 7vh;
+    flex-direction: column;
+  }
+
+  #news-section .img-container {
+    width: 100%;
+    background-size: 275%;
+  }
+
+  #news-section .img-container:hover {
+    background-size: 290%;
+  }
+
+  #pricing-section {
+    padding: 15vh 5vw;
+  }
+
+  #pricing-section .pricing-title {
+    margin-bottom: 9vh;
+  }
+
+  #pricing-section .pricing-title h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  #pricing-section .pricing-details {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  #services-for-clients .services {
+    padding: 0 5vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #services-for-clients .services div {
+    width: 100%;
+  }
+
+  #footer {
+    padding-top: 10vh;
+  }
+
+  #footer .footer-header {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 5vw;
+    padding-bottom: 4vh;
+  }
+
+  #footer .contact {
+    padding: 5vh 5vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
