@@ -35,3 +35,23 @@ function updateDots() {
 }
 
 moveToSlide(0);
+
+// for nav menu section
+
+document.querySelector(".nav-menu").addEventListener("click", () => {
+  document.querySelector("#nav-menu-section").style.display = "block";
+});
+
+document.querySelector(".cross").addEventListener("click", () => {
+  document.querySelector("#nav-menu-section").style.display = "none";
+});
+
+document
+  .querySelector(".nav-menu-section-about-us")
+  .addEventListener("click", () => {
+    const aboutUsList = document.querySelector(".nav-menu-about-us-list");
+    let style = window.getComputedStyle(aboutUsList);
+    let display = style.display;
+    document.querySelector(".nav-menu-about-us-list").style.display =
+      display === "none" ? "block" : "none";
+  });

@@ -23,6 +23,8 @@ nav {
 }
 
 .logo {
+  padding: 0;
+  margin: 0;
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -34,7 +36,7 @@ nav {
 }
 
 .logo span {
-  font-size: 1.5rem;
+  font-size: 1.6vw;
   font-style: normal;
   font-weight: 500;
   text-transform: capitalize;
@@ -51,11 +53,15 @@ nav .nav-menu {
 }
 
 .nav-items a {
-  margin-left: 40px;
+  margin-left: 1.8vw;
   text-decoration: none;
   color: white;
   font-style: normal;
-  font-weight: 400;
+  font-size: 1.3vw;
+}
+
+.nav-items a:nth-child(1) {
+  margin-left: 0px;
 }
 
 #about-us {
@@ -86,10 +92,10 @@ nav .nav-menu {
 }
 
 .nav-auth {
-  margin-left: 20px;
+  margin-left: 1.8vw;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.5vw;
   font-style: normal;
   font-weight: 600;
 }
@@ -99,14 +105,18 @@ nav .nav-menu {
   color: white;
   display: flex;
   align-items: center;
-  gap: 5px;
+  font-size: 1.3vw;
+}
+
+.nav-auth a i {
+  margin-right: 5px;
 }
 
 .nav-auth button {
   border: 2px solid #66fcf1;
   color: #66fcf1;
-  padding: 15px 20px;
-  font-size: 18px;
+  padding: 1.3vh 1.5vw;
+  font-size: 1.3vw;
   background-color: transparent;
   cursor: pointer;
 }
@@ -123,7 +133,7 @@ nav .nav-menu {
   background-position: center;
   background-size: cover;
   color: white;
-  padding: 0 7vw;
+  padding: 0 3vw;
 }
 
 .hero-section .carousel-container {
@@ -285,7 +295,7 @@ nav .nav-menu {
   background-color: #0b0c10;
   display: flex;
   gap: 30px;
-  padding: 5vw 8vw;
+  padding: 10vh 5vw;
   color: white;
 }
 
@@ -367,7 +377,7 @@ nav .nav-menu {
 
 #experience-section {
   background-color: black;
-  padding: 5vw 8vw;
+  padding: 5vw 8vw 0;
   color: white;
 }
 
@@ -382,14 +392,14 @@ nav .nav-menu {
 }
 
 #experience-section .experience .experience-left {
-  width: 50%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
 }
 
 #experience-section .experience .experience-left p {
   line-height: 30px;
-  font: 1.1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
 }
 
@@ -401,14 +411,14 @@ nav .nav-menu {
 }
 
 #experience-section .experience-left .images img {
-  width: 20rem;
+  width: 20vw;
   height: fit-content;
   border-radius: 15px;
   transition: ease-in-out 0.4s;
 }
 
 #experience-section .experience-left .images img:hover {
-  scale: 102%;
+  scale: 105%;
 }
 
 #experience-section .statistics {
@@ -418,7 +428,7 @@ nav .nav-menu {
 }
 
 #experience-section .statistics div h2 {
-  font-size: 2.8rem;
+  font-size: 2.8vw;
   margin-bottom: 1.2rem;
 }
 
@@ -426,12 +436,8 @@ nav .nav-menu {
   color: #66fcf1;
 }
 
-#experience-section .statistics div p {
-  font-size: 1.1rem;
-}
-
 #experience-section .experience-right {
-  width: 50%;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,7 +450,7 @@ nav .nav-menu {
 }
 
 #title {
-  padding: 5vh 8vw;
+  padding: 5vh 5vw 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -501,7 +507,7 @@ nav .nav-menu {
   height: 430px;
   background-position: center;
   background-repeat: no-repeat no-repeat;
-  background-size: 170%;
+  background-size: 230%;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -511,7 +517,7 @@ nav .nav-menu {
 }
 
 #services .images .image:hover {
-  background-size: 200%;
+  background-size: 250%;
 }
 
 #services .images .image1 {
@@ -589,7 +595,7 @@ nav .nav-menu {
 
 #testimonial-section .testimonial-description {
   padding: 7vh 7vw;
-  margin: 0 8vw;
+  margin: 0 5vw;
   border: 2px solid #2d2f38;
   border-radius: 20px;
   display: flex;
@@ -664,7 +670,7 @@ nav .nav-menu {
 #news-section .news-content {
   border: 2px solid #2d2f38;
   padding: 3%;
-  margin: 0 8vw;
+  margin: 0 5vw;
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -675,7 +681,7 @@ nav .nav-menu {
   background-image: linear-gradient(to bottom, transparent, rgb(71, 64, 64)),
     url("https://demo-gutenify-com.s3.amazonaws.com/wp-content/uploads/sites/146/2022/10/27130140/social-media-addiction-2021-09-24-02-56-43-utc-1.jpeg");
   background-position: center;
-  background-size: cover;
+  background-size: 215%;
   background-repeat: no-repeat no-repeat;
   width: 50rem;
   height: 100vh;
@@ -688,7 +694,7 @@ nav .nav-menu {
 }
 
 #news-section .img-container:hover {
-  background-size: 400%;
+  background-size: 235%;
 }
 
 #news-section .img-container h1 {
@@ -759,7 +765,7 @@ nav .nav-menu {
 #pricing-section {
   background-color: #121212;
   color: white;
-  padding: 7vh 8vw;
+  padding: 10vh 5vw;
 }
 
 #pricing-section .pricing-title {
@@ -778,14 +784,18 @@ nav .nav-menu {
 }
 
 #pricing-section .pricing-details {
+  padding-top: 7vh;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #pricing-section .pricing-details div {
+  /* width: 27vw; */
+  flex: 1;
   background-color: #0b0c10;
   padding: 5%;
   display: flex;
@@ -952,7 +962,7 @@ nav .nav-menu {
 #footer {
   background-color: black;
   color: white;
-  padding-top: 6%;
+  padding-top: 10vh;
 }
 
 #footer .footer-header {
@@ -960,8 +970,8 @@ nav .nav-menu {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
-  margin: 0 7%;
+  gap: 30px;
+  margin: 0 5vw;
   padding-bottom: 4%;
   border-bottom: 2px solid #2d2f38;
 }
@@ -1021,12 +1031,12 @@ nav .nav-menu {
 }
 
 #footer .contact {
-  padding: 5% 7%;
+  padding: 8vh 5vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 80px;
+  gap: 20px;
 }
 
 #footer .contact div {
@@ -1038,6 +1048,7 @@ nav .nav-menu {
 #footer .contact div h5 {
   font-size: 1.5rem;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 #footer .contact .follow p {
@@ -1073,14 +1084,14 @@ nav .nav-menu {
 }
 
 #footer .contact .payment img {
-  width: 25rem;
+  width: 25vw;
 }
 
 #footer .last-section {
   font-size: 18px;
   text-align: center;
   background-color: #0b0c10;
-  padding: 2% 0;
+  padding: 5vh 0;
 }
 
 /* animation */

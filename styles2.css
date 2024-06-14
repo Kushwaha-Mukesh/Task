@@ -14,6 +14,56 @@
   color: black;
 }
 
+#nav-menu-section {
+  padding-top: 60px;
+  background-color: #121212;
+  color: white;
+  height: 100vh;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+
+#nav-menu-section i.cross {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#nav-menu-section i.cross:hover {
+  cursor: pointer;
+  color: #66fcf1;
+}
+
+#nav-menu-section .nav-menu-list {
+  list-style-type: none;
+  width: 70vw;
+  margin: auto;
+  text-align: left;
+  border: 2px solid #2d2f38;
+  font-size: 18px;
+}
+
+#nav-menu-section .nav-menu-list li {
+  border-bottom: 1px solid #2d2f38;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+#nav-menu-section .nav-menu-list li.nav-menu-section-about-us {
+  padding: 20px 25px;
+}
+
+#nav-menu-section .nav-menu-list .nav-menu-about-us-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   nav {
     flex-direction: column;
@@ -79,23 +129,126 @@
     gap: 30px;
   }
 
-  #experience-section .experience {
-    flex-direction: column;
+  #experience-section {
+    padding: 10vh 5vw 0;
   }
 
-  #services .images div {
+  #experience-section .experience-left {
+    width: 50vw;
+  }
+
+  #experience-section .experience-left .images img {
+    width: 20vw;
+  }
+
+  #experience-section .statistics {
+    gap: 1vw;
+  }
+
+  #experience-section .statistics div h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  #title {
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #title div h1 {
+    font-size: 3vw;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+
+  #title button {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+
+  #services .images .image {
     width: 300px;
     height: 350px;
+    background-size: 240%;
+  }
+
+  #services .images .image:hover {
+    background-size: 260%;
+  }
+
+  #testimonial-section .testimonial-description {
+    margin: 0 5vw;
   }
 
   #news-section .img-container {
     width: 40rem;
     height: 80vh;
+    padding: 0 5% 5% 5%;
+    background-size: 290%;
+  }
+
+  #news-section .img-container:hover {
+    background-size: 310%;
+  }
+
+  #news-section .img-container h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 50px;
+  }
+
+  #news-section .news-content {
+    margin: 0 5vw;
+  }
+
+  #news-section .news-articles .news-article .news-article-title h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  #news-section .news-articles .news-article .news-article-title p {
+    font-size: 14px;
+  }
+
+  #pricing-section {
+    padding: 12vh 5vw;
+  }
+
+  #pricing-section .pricing-details {
+    gap: 2vw;
+    justify-content: start;
+  }
+
+  #pricing-section .pricing-details div {
+    margin-top: 7vh;
+    width: 26vw;
+  }
+
+  #services-for-clients .services div {
+    min-width: 30vw;
+    width: 40vw;
   }
 
   #footer .footer-header {
-    flex-direction: column;
     gap: 20px;
+    margin: 0 5vw;
+  }
+
+  #footer .contact {
+    padding: 7vh 5vw;
+    gap: 15px;
+  }
+
+  #footer .contact div h5 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  #footer .contact .payment img {
+    width: 15rem;
   }
 }
 
@@ -128,6 +281,12 @@
     font-size: 1.5rem;
     border: 1px solid #2d2f38;
     padding: 0 10px;
+    cursor: pointer;
+  }
+
+  nav .nav-menu:hover {
+    border: 1px solid #66fcf1;
+    color: #66fcf1;
   }
 
   .nav-auth {
@@ -135,6 +294,10 @@
     display: flex;
     justify-content: space-between;
     gap: 5px;
+  }
+
+  .nav-auth a {
+    font-size: 18px;
   }
 
   .nav-auth button {
@@ -246,11 +409,11 @@
 
   #services .images .image {
     width: 100%;
-    background-size: 100%;
+    background-size: 125%;
   }
 
   #services .images .image:hover {
-    background-size: 120%;
+    background-size: 150%;
   }
 
   #testimonial-section .testimonial-description {
@@ -294,6 +457,10 @@
     gap: 50px;
   }
 
+  #pricing-section .pricing-details div {
+    width: 100%;
+  }
+
   #services-for-clients .services {
     padding: 0 5vw;
     flex-direction: column;
@@ -317,7 +484,12 @@
 
   #footer .contact {
     padding: 5vh 5vw;
+    gap: 80px;
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+
+  #footer .contact .payment img {
+    width: 25rem;
   }
 }
